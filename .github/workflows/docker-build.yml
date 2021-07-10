@@ -43,4 +43,5 @@ jobs:
         with:
           user: ${{ secrets.DOCKERHUB_USERNAME }}
           pass: ${{ secrets.DOCKERHUB_TOKEN }}
+          slug: tsouhaieb/python-helloworld
           description: true
