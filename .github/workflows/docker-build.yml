@@ -38,3 +38,9 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: tsouhaieb/python-helloworld:latest
+      - name: docker hub description
+        uses: meeDamian/sync-readme@v1.0.6
+        with:
+          user: ${{ secrets.DOCKERHUB_USERNAME }}
+          pass: ${{ secrets.DOCKERHUB_TOKEN }}
+          description: true
